@@ -1,25 +1,9 @@
-import logoJWBlanc from "./image/LogoJWBlanc.png";
+//import logoJWBlanc from "./image/LogoJWBlanc.png";
 import "./App.css";
+import Header from "./component/Header";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logoJWBlanc} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://jwellweb.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Voir le site JwellWeb
-        </a>
-      </header>
-    </div>
-  );
+  return <Header />;
 }
 
 export default App;
