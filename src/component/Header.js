@@ -1,3 +1,3 @@
 export default function Header() {
-  return <div>La maison jungle</div>;
+  return <h1>La maison jungle</h1>;
 }
