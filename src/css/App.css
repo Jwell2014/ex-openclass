@@ -1,12 +1,13 @@
 @import "./Header.css";
 @import "./Description.css";
 @import "./Banner.css";
-@import "./Carts.css";
+@import "./Cart.css";
 @import "./Recommendation.css";
 @import "./ShoppingList.css";
 @import "./PlantItem.css";
 @import "./Footer.css";
-
+@import "./Categories.css";
+@import "./Layout.css";
 
 
 
