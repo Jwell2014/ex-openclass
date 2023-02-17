@@ -1,20 +1,26 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import "../css/Cart.css";
 
-function Cart({ cart, updateCart }) {
+function Cart({ cart, updateCart }, { activeCategory, setActiveCategory }) {
   const [isOpen, setIsOpen] = useState(true);
   const total = cart.reduce(
     (acc, plantType) => acc + plantType.amount * plantType.price,
     0
   );
+
+  useEffect(() => {
+    document.title = `LMJ: ${total}€ d'achats`;
+  }, [total, activeCategory]);
+
   return isOpen ? (
     <div className="cart">
       <button className="cart-toggle-button" onClick={() => setIsOpen(false)}>
         Fermer
       </button>
+      <h2 className="cart-titre-panier"> Votre panier</h2>
       {cart.length > 0 ? (
         <div>
-          <h2>Panier</h2>
           <ul>
             {cart.map(({ name, price, amount }, index) => (
               <div key={`${name}-${index}`}>
@@ -23,10 +29,12 @@ function Cart({ cart, updateCart }) {
             ))}
           </ul>
           <h3>Total :{total}€</h3>
-          <button onClick={() => updateCart([])}>Vider le panier</button>
+          <button className="cart-btn-vider" onClick={() => updateCart([])}>
+            Vider le panier
+          </button>
         </div>
       ) : (
-        <div>Votre panier est vide</div>
+        <div>🛒 Votre panier est vide</div>
       )}
     </div>
   ) : (

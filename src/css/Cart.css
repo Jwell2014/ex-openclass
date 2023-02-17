@@ -5,7 +5,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	width: 300px;
+	width: 30%;
+	border-radius: 0 20px 0 0 ;
 }
 
 .cart-add-button {
@@ -14,13 +15,13 @@
 }
 
 .cart-toggle-button {
-	background: none;
+	background: rgb(78, 76, 76);
 	outline: none;
-	border: none;
+	border-radius: 20px;
 	font-weight: 600;
 	cursor: pointer;
 	align-self: self-start;
-	padding: 0;
+	padding: 5px;
 	color: white;
 	align-self: flex-end;
 }
@@ -31,5 +32,18 @@
 }
 
 .cart-closed > button {
-	color: black;
+	color: rgb(249, 248, 248);
+}
+
+.cart-btn-vider{
+	background-color: #842609;
+	color: azure;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.cart-titre-panier{
+	text-align: center;
+	padding-bottom: 20px;
+	border-bottom: solid 2px black;
 }

@@ -10,3 +10,9 @@
 	justify-content: center;
 }
 
+.plant-button {
+ background-color: rgb(28, 137, 88);
+ border-radius: 10px;
+ color: aliceblue;
+ cursor: pointer;
+}

@@ -1,6 +1,10 @@
 import "../css/Categories.css";
 
-function Categories({ setActiveCategory, categories, activeCategory }) {
+export default function Categories({
+  setActiveCategory,
+  categories,
+  activeCategory,
+}) {
   return (
     <div className="categories">
       <select
@@ -8,7 +12,7 @@ function Categories({ setActiveCategory, categories, activeCategory }) {
         onChange={(e) => setActiveCategory(e.target.value)}
         className="categories-select"
       >
-        <option value="">---</option>
+        <option value="">--------</option>
         {categories.map((cat) => (
           <option key={cat} value={cat}>
             {cat}
@@ -19,5 +23,3 @@ function Categories({ setActiveCategory, categories, activeCategory }) {
     </div>
   );
 }
-
-export default Categories;
