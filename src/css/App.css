@@ -1,10 +1,9 @@
-.App {
-  text-align: center;
-  background-color: #282c34;
-  color: white;
+@import "./Header.css";
+@import "./Description.css";
+@import "./Banner.css";
+@import "./Carts.css";
 
 
-}
 
 
 

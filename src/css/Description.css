@@ -1,0 +1,18 @@
+.description{
+    background-color: rgb(244, 140, 5);
+    border: 2px solid black;
+
+}
+
+.isYes {
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+    text-transform: uppercase;
+}
+.isNo {
+    background-color: rgb(220, 95, 5);
+    border: 2px solid black;
+    text-align: center;
+    text-transform: uppercase;
+}
