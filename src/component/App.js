@@ -1,7 +1,8 @@
 //import logoJWBlanc from "./image/LogoJWBlanc.png";
 import Banner from "./Banner";
 import Carts from "./Carts";
-import ShoppingList from "./ShoppinfList";
+import Footer from "./Footer";
+import ShoppingList from "./ShoppingList";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Banner />
       <ShoppingList />
       <Carts />
+      <Footer />
     </>
   );
 }

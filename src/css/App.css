@@ -2,7 +2,10 @@
 @import "./Description.css";
 @import "./Banner.css";
 @import "./Carts.css";
-@import "./ShoppingList.css"
+@import "./Recommendation.css";
+@import "./ShoppingList.css";
+@import "./PlantItem.css";
+@import "./Footer.css";
 
 
 

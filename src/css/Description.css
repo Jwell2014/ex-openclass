@@ -4,21 +4,3 @@
 
 }
 
-.isYes {
-    background-color: greenyellow;
-    border: 2px solid black;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 20px 30% 20px 30%;
-    padding: 20px;
-    border-radius: 20px 20px 0 0;
-}
-.isNo {
-    background-color: rgb(220, 95, 5);
-    border: 2px solid black;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 20px 30% 20px 30%;
-    padding: 20px;
-    border-radius: 20px 20px 0 0;
-}
